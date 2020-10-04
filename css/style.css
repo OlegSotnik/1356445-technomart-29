@@ -18,6 +18,7 @@
     --basic-gray3: #C5C5C5;
     --basic-gray4: #B7BFC8;
     --basic-gray5: #ABABAB;
+    --border-producer: #EAEAEA;
     --basic-white-header: #F9F5F0;
     --basic-extra-white-footer-text: #F3F7F9;
     --basic-extra-white-footer-nav: #F1F5F7;
@@ -39,10 +40,8 @@
     --dark-blue-active: #1D2739;
     --promo-buttom-active: rgba(169, 169, 169, 0.3);
     --link-button-active: #BA2732;
-   
   }
 
-  /* Global */
 
 body {
     min-width: 1200px;
@@ -273,13 +272,15 @@ img {
     background: var(--link-button-active);
   }
 
-  .main-product-header {
+  .main-product-header,
+  .main-producer-header {
     Width: 940px;
     height: 89px;
     background: var(--basic-white-header);
   }
 
-  .main-product h2 {
+  .main-product h2,
+  .main-producer-header h2 {
     font-size: 30px;
     color: var(--basic-blue);
     text-transform: uppercase;
@@ -336,6 +337,67 @@ img {
     font-weight: 700;
     color: var(--basic-white);
   }
+
+  .main-producer-list {
+    Width: 940px;
+    height: auto;
+    list-style: none;
+  }
+
+  .main-producer-item {
+    display: inline-block;
+    Width: 220px;
+    height: 145px;
+    border: 1px solid var(--border-producer);
+  }
+  
+  .main-services {
+    background: var(--basic-extra-white-footer-nav);
+  }
+
+  .main-services h2 {
+    font-size: 30px;
+    color: var(--basic-black);
+    text-transform: uppercase;
+  }
+
+  .main-services p {
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+  }
+
+  .index-label {
+    width: 240px;
+    height: 61px;
+    font-family: "Cuprum", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: var(--basic-white);
+    background: var(--basic-blue);
+  }
+
+  .main-services-item h3 {
+    font-family: "Cuprum", Arial, sans-serif;
+    font-size: 30px;
+    color: var(--basic-blue);
+  }
+
+  .index-label:hover {
+    color: var(--basic-white);
+    background: var(--blue-hover);
+  }
+
+  .index-label:active {
+    color: var(--basic-blue);
+    background: var(--blue-white);
+  }
+
+  .main-services-list input[type=radio] {
+    display: none;
+  }
+    
 
 
 
