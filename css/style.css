@@ -355,13 +355,15 @@ img {
     background: var(--basic-extra-white-footer-nav);
   }
 
-  .main-services h2 {
+  .main-services h2,
+  .main-info h2 {
     font-size: 30px;
     color: var(--basic-black);
     text-transform: uppercase;
   }
 
-  .main-services p {
+  .main-services p,
+  .main-info p {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 13px;
     line-height: 24px;
@@ -397,6 +399,31 @@ img {
   .main-services-list input[type=radio] {
     display: none;
   }
+
+  .main-info-text-list {
+    list-style: none;
+  }
+
+  .red-line {
+    background: var(--basic-red);
+    width: 25px;
+    height: 2px;
+  }
+
+  .main-info-text-item {
+    font-size: 18px;
+    color: var(--basic-black);
+  }
+
+  .main-info-text-link {
+    width: 220px;
+  }
+
+  .main-info-map-link {
+    width: 300px;
+  }
+
+  
     
 
 
