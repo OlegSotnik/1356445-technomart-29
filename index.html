@@ -311,15 +311,36 @@
     </section>
 	
     <section class="modal modal-map">
-        <h2>Как до нас добраться</h2>
+		<h2>Как до нас добраться</h2>
         <!-- Здесь будет карта -->
         <button class="modal-close" type="button">Закрыть</button>
     </section>
 	
-	<section class="modal modal-question">
-        <h2>Здесь Вы можете задать свой вопрос</h2>
-        <!-- Здесь будет форма обратной связи -->
-        <button class="modal-close" type="button">Закрыть</button>
+	<section class="modal-question">
+
+		<form action="https://echo.htmlacademy.ru" method="post">
+
+			<label class="name-field" for="name-field">Ваше имя:</label>
+			
+			<input class="name-field" type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+			
+			<label class="email" for="email-field">Ваш e-mail:</label>
+			
+			<input class="email" type="email" name="email" id="email-field" placeholder="email@example.com">
+			
+			<label class="comment" for="comment-field">Текст письма:</label>
+			
+			<textarea class="comment" name="comment" id="comment-field" rows="3" placeholder="В свободной форме"
+			></textarea>
+			
+			<div class="submit">
+				<input type="submit" value="отправить">
+			</div>
+
+			<a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
+
+		</form>
+		
     </section>
 
   </body>
