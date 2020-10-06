@@ -83,11 +83,13 @@ img {
     font-size: 18px;
   }
 
-  a.header-logo {
-    background: var(--basic-red);
-    display: block;
+  .header-logo {
     width: 220px;
     height: 47px;
+    border: 3px solid red;
+    background-image: url("img/logo.png");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 
   a.header-logo:active {
