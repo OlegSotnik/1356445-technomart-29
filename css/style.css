@@ -72,13 +72,13 @@ img {
     background: var(--basic-extra-white-catalog-h1);
   }
   
-  .header-section1 {
-    width: 1200px;
-    height: 42px;
+  .header-section-logo {
+    /* width: 1200px;
+    height: 42px; */
     background: var(--basic-dark-blue);  
   }
 
-  .header-section1 a {
+  .header-section-logo a {
     color: var(--basic-white);
     font-size: 18px;
   }
@@ -126,43 +126,43 @@ img {
     background-color: var(--green-hover);
   }
 
-.header-section2 {
+.header-section-centr {
     background-color: transparent;
   }
 
-.header-section2-title {
+.header-section-centr-title {
     color: var(--basic-red);
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
   }
 
-  .header-section2-contacts {
+  .header-section-centr-contacts {
     color: var(--basic-blue);
   }
 
-.header-section2-tel {
+.header-section-centr-tel {
     color: var(--basic-red);
     font-weight: bold;
     font-size: 21px;
     line-height: 30px;
   }
 
-  .header-section2-authorization a {
+  .header-section-centr-authorization a {
     color: var(--basic-black);
     font-size: 21px;
     line-height: 21px;
   }
 
-  .header-section2-authorization a:hover {
+  .header-section-centr-authorization a:hover {
     color: var(--basic-red);
   }
 
-  .header-section2-authorization a:hover {
+  .header-section-centr-authorization a:hover {
     color: var(--basic-red);
   }
 
-  .header-section2-authorization a:active {
+  .header-section-centr-authorization a:active {
     color: var(--basic-gray3);
   }
 
