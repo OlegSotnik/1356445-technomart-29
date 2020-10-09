@@ -20,6 +20,7 @@
     --basic-gray5: #ABABAB;
     --basic-gray6: #F4F4F4;
     --basic-gray7: #F1F1F1;
+    --basic-gray8: #E5E5E5;
     --border-producer: #EAEAEA;
     --basic-white-header: #F9F5F0;
     --basic-extra-white-footer-text: #F3F7F9;
@@ -737,9 +738,8 @@ img {
   .button-sort:focus {
     color: var(--basic-red);
     outline-style: none;
+    border: none;
   }
-
-
 
   .catalog-products {
     width: 700px;
@@ -750,6 +750,77 @@ img {
     width: 700px;
     height: auto;
     list-style: none;
+  }
+
+  .pagination-list {
+    list-style: none;
+  }
+
+  .pagination-item,
+  .pagination-item a {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 38px;
+    text-align: center;
+    color: var(--basic-black);
+    border: 1px solid var(--basic-gray8);
+    box-sizing: border-box;
+    border-radius: 2px;
+  }
+
+  .pagination-item:hover {
+    border: 1px solid var(--basic-gray3);
+  }
+
+  .pagination-item:active {
+    border: 1px solid var(--basic-red);
+  }
+
+  .pagination-item-current,
+  .pagination-item-current a {
+    color: var(--basic-white);
+    border: 1px solid var(--basic-red);
+    background: var(--basic-red);
+  }
+  
+  .pagination-list a {
+    border: none;
+  }
+
+  .item-number {
+    width: 38px;
+    height: 38px;
+  }
+
+  .item-next {
+    width: 140px;
+    height: 38px;
+  }
+
+  .description {
+    background: var(--basic-extra-white-footer-nav);
+  }
+
+  .description h2 {
+    font-family: Cuprum, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--basic-black);
+  }
+
+  ..description p {
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--basic-black);
+
   }
 
   

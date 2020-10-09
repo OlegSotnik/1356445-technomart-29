@@ -201,17 +201,17 @@
 				</li>				
 			</ul>
 			</div>
-			<div>
-			    <ul>
-                    <li><a>1</a></li>
-                    <li><a href="blank.html">2</a></li>
-					<li><a href="blank.html">3</a></li>
-                </ul>
-				<a href="blank.html">СЛЕДУЮЩАЯ</a>
+			<div class="pagination-box">
+			    <ul class="pagination-list">
+                    <li class="pagination-item item-number pagination-item-current"><a>1</a></li>
+                    <li class="pagination-item item-number"><a href="blank.html">2</a></li>
+					<li class="pagination-item item-number"><a href="blank.html">3</a></li>
+					<li class="pagination-item item-next"><a href="blank.html">СЛЕДУЮЩАЯ</a></li>
+				</ul>
 			</div>
         </section>
 		
-		<section>
+		<section class="description">
 		    <h2>ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
 			<p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. 
@@ -220,74 +220,66 @@
 	
 	</main>
 	
-	<footer>
+	<footer class="footer">
 	
-	    <nav>
-			<a href="index.html"><img src="img/index-logo.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»"></a>
-			<p>
+        <nav class="footer-navigation">
+	        <a class="footer-navigation-logo"><img src="img/index-logo.svg" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»"></a>
+		    <p>
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				<a href="tel:+78125550555">+7 (812) 555-05-55</a>		
 			</p>
-		    <ul>
-                <li><a href="blank.html">Компания</a></li>
-			    <li><a href="blank.html">Новости</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-                <li><a href="blank.html">Материалы</a></li>
-			    <li><a href="blank.html">Техника</a></li>
-                <li><a href="blank.html">Инструмент</a></li>
-                <li><a href="blank.html">Спецпредложения</a></li>
-            </ul>
+		<ul class="footer-navigation-list">
+            <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
+			<li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
+            <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
+            <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
+            <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
+            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Материалы</a></li>
+			<li class="footer-navigation-item"><a class="link-orange" href="blank.html">Техника</a></li>
+            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Инструмент</a></li>
+            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Спецпредложения</a></li>
+        </ul>
 	    </nav>
 	
-	    <section>
-	        <p>© 2010–2019 Компания «Техномарт»
-		       Все права защищены</p>
-		    <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
-            </ul>
-	        <p>Обратная связь:
-                <a href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-            </p>
-            <p>Разработано -
-                <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-            </p>
+	    <section class="footer-socials">
+	    <p>© 2010–2019 Компания «Техномарт»
+		   Все права защищены</p>
+		<ul class="footer-socials-list">
+            <li><a href="#"><img class="logo-socials" src="img/icon-vk.png" width="27" height="16" alt="Логотип ВКонтакте"></a></li>
+            <li><a href="#"><img class="logo-socials" src="img/icon-fb.png" width="12" height="22" alt="Логотип Фейсбук"></a></li>
+            <li><a href="#"><img class="logo-socials" src="img/icon-insta.png" width="21" height="21" alt="Логотип Инстаграмм"></a></li>
+        </ul>
+	    <p>Обратная связь:
+        <a class="footer-socials-link link-orange" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </p>
+        <p>Разработано -
+        <a class="footer-socials-link link-orange" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+        </p>
 	    </section>
 	
 	</footer>
 	
-	<section>
-        <h2>Оформить заказ</h2>
-        <!-- Здесь будет форма оформления заказа -->
-        <button type="button">Закрыть</button>
+	<section class="modal-order">
+        <p>Товар добавлен в корзину!</p>
+        <div class="submit-order">
+			<div class="link-button"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
+			<div class="button-white"><a href="#">ПРОДОЛЖИТЬ ПОКУПКИ</a></div>
+		</div>
+        <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
 
-    <section>
+    <section class="modal modal-authorization">
         <h2>Войти в личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <!-- Здесь будет форма логина и пароля -->
-        <button type="button">Закрыть</button>
+        <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
 	
-	<section>
+	<section class="modal modal-account">
         <h2>Создать личный кабинет</h2>
         <!-- Здесь будет форма логина и пароля -->
-        <button type="button">Закрыть</button>
+        <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
-	
-    <section>
-        <h2>Товар добавлен в ЗАКЛАДКИ</h2>
-        <button type="button">Закрыть</button>
-    </section>
-	
-	<section>
-        <h2>Товар добавлен в КОРЗИНУ</h2>
-        <button type="button">Закрыть</button>
-    </section>
-
 
   </body>
 </html>
