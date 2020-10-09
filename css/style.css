@@ -32,6 +32,7 @@
     --shadow: rgba(0, 0, 0, 0.25);
     --background-modal: #565656;
     --shadow-modaal: 0px 0px 14.7px rgba(47, 42, 43, 0.5);
+    --button-sort:  rgba(0, 0, 0, 0.3);
 
   /* :hover */
     --green-hover: #5FBB2D;
@@ -714,6 +715,32 @@ img {
     color: var(--basic-black);
   }
 
+  .button-sort {
+    text-decoration: none;
+    border: none;
+    border-bottom: 2px dotted var(--basic-red);
+    font-family: PT Sans, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--button-sort);
+    mix-blend-mode: normal;
+    text-transform: uppercase;
+  }
+
+  .button-sort:hover {
+    color: var(--basic-black);
+    border-bottom: 2px solid var(--basic-red);
+  }
+
+  .button-sort:focus {
+    color: var(--basic-red);
+    outline-style: none;
+  }
+
+
+
   .catalog-products {
     width: 700px;
     height: auto;
@@ -725,50 +752,6 @@ img {
     list-style: none;
   }
 
-/* 
-  .old-price {
-    Width: 184px;
-    height: 20px;
-    text-align: center;
-    margin: 0 auto;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: 700;
-    text-decoration-line: line-through;
-    text-transform: uppercase;
-    color: var(--basic-gray);
-  }
-
-  .button-product {
-    Width: 141px;
-    height: 38px;
-    text-align: center;
-    margin: 0 auto;
-    background: var(--basic-red) url(img/button-product.png);
-  }
-
-  .button-product a {
-    text-transform: uppercase;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 17px;
-    line-height: 38px;
-    font-weight: 700;
-    color: var(--basic-white);
-  }
-
-  .main-producer-list {
-    Width: 940px;
-    height: auto;
-    list-style: none;
-  }
-
-  .main-producer-item {
-    display: inline-block;
-    Width: 220px;
-    height: 145px;
-    border: 1px solid var(--border-producer);
-  }*/
   
 
   
