@@ -810,7 +810,7 @@ img {
     color: var(--basic-black);
   }
 
-  ..description p {
+  .description p {
     font-family: PT Sans, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
