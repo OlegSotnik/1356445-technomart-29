@@ -53,7 +53,7 @@
 	   </nav>
 	</header>
 	
-	<main>
+	<main class="main main-catalog">
 	
 	    <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
@@ -74,7 +74,7 @@
 	        <h1>ПЕРФОРАТОРЫ</h1>
 		</div>
 		
-        <section>
+        <section class="filter">
 
 			<div class="box-header-filter">
 			    <h3>Фильтр:</h3>
@@ -86,13 +86,11 @@
 			    <p>Питание:</p>
 			</div>
 			
-        </section>
+		</section>
+		
+		<section class="catalog-products">
 
-        <section>
-
-			<h2>Список товаров</h2>
-			
-			<div class="box-sort">
+            <div class="box-sort">
 
 				<h3>СОРТИРОВКА:</h3>
 				
@@ -102,9 +100,10 @@
 
 				<input class="button-sort" type="button" value="ПО ФУНКЦИОНАЛУ">
                 
-			</div>
+		    </div>
 
-			<div class="catalog-products">
+				<h2>Список товаров</h2>
+				
 			    <ul  class="catalog-products-list">
 				<li  class="main-product-item">
 					<div class="img-product">
@@ -206,7 +205,7 @@
 					<div class="button-product"><a href="#">12500 Р.</a></div>					
 				</li>				
 			</ul>
-			</div>
+			
 			<div class="pagination-box">
 			    <ul class="pagination-list">
                     <li class="pagination-item item-number pagination-item-current"><a>1</a></li>
@@ -229,25 +228,32 @@
 	<footer class="footer">
 	
         <nav class="footer-navigation">
+			<div class="container-footer-navigation">
+			<div class="footer-address">
 	        <a class="footer-navigation-logo"><img src="img/logo-footer.png" width="220" height="68" alt="Логотип интернет-магазина «Техномарт»"></a>
 		    <p>
 				г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				<a href="tel:+78125550555">+7 (812) 555-05-55</a>		
 			</p>
-		<ul class="footer-navigation-list">
-            <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
-			<li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
-            <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
-            <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
-            <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
-            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Материалы</a></li>
-			<li class="footer-navigation-item"><a class="link-orange" href="blank.html">Техника</a></li>
-            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Инструмент</a></li>
-            <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Спецпредложения</a></li>
-        </ul>
+			</div>
+			<div class="footer-navigation-main">
+		    <ul class="footer-navigation-list">
+                <li class="footer-navigation-item"><a href="blank.html">Компания</a></li>
+			    <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
+                <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
+                <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
+                <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
+                <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Материалы</a></li>
+			    <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Техника</a></li>
+                <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Инструмент</a></li>
+                <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Спецпредложения</a></li>
+			</ul>
+			</div>
+			</div>
 	    </nav>
 	
 	    <section class="footer-socials">
+		<div class="container-footer-socials">
 	    <p>© 2010–2019 Компания «Техномарт»
 		   Все права защищены</p>
 		<ul class="footer-socials-list">
@@ -260,7 +266,8 @@
         </p>
         <p>Разработано -
         <a class="footer-socials-link link-orange" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-        </p>
+		</p>
+		</div>
 	    </section>
 	
 	</footer>
