@@ -216,6 +216,7 @@ body {
 
   .header-section-centr-authorization {
     display: flex;
+    width: 300px;
     margin-left: auto;
   }
 
@@ -226,6 +227,7 @@ body {
     width: 121px;
     height: 45px;
     margin-top: 46px;
+    margin-left: auto;
     margin-right: 10px;
     background: var(--basic-white);
   }
@@ -289,11 +291,13 @@ body {
 
   .container {
     width: 940px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .main-promo {
-    margin: 59px 0;
+    margin-top: 59px;
+    margin-bottom: 59px;
   }
 
   .main-promo-list {
@@ -935,6 +939,12 @@ body {
     margin-left: 910px;
   }
 
+  .modal-question-close {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 590px;
+  }
+
   .submit-order {
     display: flex;
     justify-content: center;
@@ -960,9 +970,13 @@ body {
   /* Catalog */
 
   .header-section-centr-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 299px;
     height: 45px;
-    background: var(--basic-extra-dark);
+    margin-top: 46px;
+    background: var(--basic-white);
   }
 
   .header-section-centr-name a {
@@ -980,11 +994,24 @@ body {
     color: var(--basic-gray3);
   }
 
+  .header-section-centr-account {
+    margin: 7px auto auto auto;
+  }
+
   a.header-section-centr-account {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-blue);
+  }
+
+  .catalog-authorization {
+    flex-direction: column;
+  }
+
+  .header-link-basket-catalog {
+    background: var(--basic-red);
+    height: 42px;
   }
 
   .main-catalog {
@@ -994,6 +1021,7 @@ body {
   }
 
   .breadcrumbs {
+    display: flex;
     grid-column: 1 / -1;
     margin: 21px 0 0 0;
     padding: 0;
@@ -1018,6 +1046,7 @@ body {
     font-family: Cuprum, Arial, sans-serif;
     font-size: 30px;
     line-height: 30px;
+    margin-left: 29px;
     text-transform: uppercase;
     color: var(--basic-blue);
   }
@@ -1028,6 +1057,7 @@ body {
   }
 
   .box-header-filter {
+    display: flex;
     width: 220px;
     height: 38px;
     background: var(--basic-light-pink);
@@ -1041,7 +1071,7 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     color: var(--basic-black);
-    margin: 0;
+    margin: auto auto auto 18px;
     padding: 0;
   }
 
@@ -1056,6 +1086,7 @@ body {
   }
 
   .box-sort {
+    display: flex;
     grid-column: 2 / -1;
     width: 700px;
     height: 38px;
@@ -1070,11 +1101,12 @@ body {
     font-weight: normal;
     text-transform: uppercase;
     color: var(--basic-black);
-    margin: 0;
+    margin: auto 140px auto 18px;
     padding: 0;
   }
 
   .button-sort {
+    height: 18px;
     text-decoration: none;
     border: none;
     border-bottom: 2px dotted var(--basic-red);
@@ -1086,6 +1118,20 @@ body {
     color: var(--button-sort);
     mix-blend-mode: normal;
     text-transform: uppercase;
+    background: var(--basic-light-pink);
+    padding: 0;
+  }
+
+  .button-sort-price {
+    margin: 10px 70px 10px 0;
+  }
+
+  .button-sort-type {
+    margin: 10px 65px 10px 0;
+  }
+
+  .button-sort-functional {
+    margin: 10px 46px 10px 0;
   }
 
   .button-sort:hover {
@@ -1117,11 +1163,18 @@ body {
   }
 
   .pagination-list {
+    display: flex;
+    margin: 48px 0 0 0;
+    padding: 0;
     list-style: none;
   }
 
   .pagination-item,
   .pagination-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
     font-family: PT Sans, Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -1132,6 +1185,7 @@ body {
     border: 1px solid var(--basic-gray8);
     box-sizing: border-box;
     border-radius: 2px;
+    margin-right: 10px;
   }
 
   .pagination-item:hover {
@@ -1164,9 +1218,14 @@ body {
   }
 
   .description {
-    grid-column: 1 / -1;
     height: 261px;
+    margin-top: 59px;
     background: var(--basic-extra-white-footer-nav);
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
   }
 
   .description h2 {
@@ -1177,7 +1236,7 @@ body {
     line-height: 30px;
     text-transform: uppercase;
     color: var(--basic-black);
-    margin: 0;
+    margin: 64px 0 0 0;
     padding: 0;
   }
 
@@ -1187,6 +1246,7 @@ body {
     font-weight: normal;
     font-size: 13px;
     line-height: 24px;
+    margin-top: 25px;
     color: var(--basic-black);
   }
 
