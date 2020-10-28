@@ -14,7 +14,7 @@
 		    <div class="container-header-logo">
             <div class="header-logo"><a href="index.html"><img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт"></a></div>
 			<form class="header-search">
-                <input type="search" name="q" placeholder="Поиск:">
+                <input class="header-search-input" type="search" name="q" placeholder="Поиск:">
             </form>
 			<a class="header-link-bookmarks" href="#">Закладки: 0</a>
 			<a class="header-link-basket" href="#">Корзина: 0</a>
@@ -32,7 +32,7 @@
 				<div class="header-section-centr-address"><p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
 		    </div>
 			<div class="header-section-centr-authorization">
-			    <div class="header-section-centr-login-link"><a href="blank.html">Вход</a></div>
+			    <div class="header-section-centr-login-link"><a href="blank.html"><svg width="20" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.2 8.5L5.7 0v6H0v5h5.7v6l8.5-8.5z" fill="#C5C5C5"/><path d="M16.2 15h-4.8v2h4.8c2 0 2.8-1.8 2.9-3V3c0-1.2-.8-3-3-3h-4.7v2h4.8c.8 0 1 .7 1 1v11c0 .3-.2 1-1 1z" fill="#C5C5C5"/></svg>Вход</a></div>
 			    <div class="header-section-centr-reg-link"><a href="blank.html">Регистрация</a></div>
 			</div>
 		</section>
@@ -51,49 +51,55 @@
 	
 	<main class="main">
 	
-        <div class="container"><h1>Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</h1></div>
+        <div class="container visually-hidden"><h1>Интернет-магазин строительных материалов и инструментов для ремонта «Техномарт»</h1></div>
 		
 		<section class="main-promo container">
 		    <ul class="main-promo-list">
                 <li class="main-promo-item promo-materials">				    
 				    <h2>Материалы</h2>
-					<div class="main-promo-buttom"><a href="blank.html">на любой вкус</a></div>					
+					<div class="main-promo-buttom"><a href="blank.html">на любой вкус</a></div>
+					<div class="main-promo-new">new</div>				
 				</li>
 		        <li class="main-promo-item promo-instrument">				    
 				    <h2>Инструмент</h2>
-					<div class="main-promo-buttom"><a href="blank.html">на все случаи</a></div>						
+					<div class="main-promo-buttom"><a href="blank.html">на все случаи</a></div>	
+					<div class="main-promo-new none">new</div>					
 				</li>
 				<li class="main-promo-item promo-technic">				    
 				    <h2>Техника</h2>
-					<div class="main-promo-buttom"><a href="blank.html">для стройки</a></div>						
+					<div class="main-promo-buttom"><a href="blank.html">для стройки</a></div>
+					<div class="main-promo-new none">new</div>						
 				</li>
 				<li class="main-promo-slider">
-					<!-- <input type='radio' id='123' name='123'>
-				    <label for='123'></label>  
-                    <div class="main-promo-slide">
-					    <div class="slide-header">
-						<h2>Дрели</h2>
-						<p>Соседям на радость!</p>
-					    </div> 
-					    <div  class="link-button"><a href="catalog.html">открыть каталог</a></div> -->
-						<img src="img/drills.jpg" width="620" height="266" alt="Фото рабочего с дрелью">
-					<!--  </div>
-					<input type='radio' id='124' name='124' checked>
-				    <label for='124'></label>
-                    <div class="main-promo-slide">
-					    <h2>Перфораторы</h2>
-					    <p>Настоящие мужские игрушки</p>
-					    <div  class="link-button"><a href="catalog.html">открыть каталог</a></div>
-						<img src="img/perforator.jpg" width="620" height="266" alt="Фото рабочего с перфоратором">
-					</div>	 -->
+					
+						<div class="main-promo-slide promo-slide1 none">
+							<h2 class="slide-title-h2">Дрели</h2>
+							<p class="slide-title-p">Соседям на радость!</p>
+							<div class="main-promo-slide-link link-button"><a href="#">открыть каталог</a></div>
+						</div>
+
+						<div class="main-promo-slide promo-slide2">
+							<h2 class="slide-title-h2">Перфораторы</h2>
+                            <p class="slide-title-p">Настоящие мужские игрушки</p>
+							<div class="main-promo-slide-link link-button"><a href="#">открыть каталог</a></div>
+						</div>
+
+						<button class="main-promo-slider-controls1 current" type="button" aria-label="Первый слайд"></button>
+						<button class="main-promo-slider-controls2" type="button" aria-label="Второй слайд"></button>
+						
+						<button class="carousel carousel-left" type="button" aria-label="Влево"></button>
+                        <button class="carousel carousel-right" type="button" aria-label="Вправо"></button>
+			  
 				</li>
 				<li class="main-promo-item promo-sale">				    
 				    <h2>Скидки 50%</h2>
-					<div class="main-promo-buttom"><a href="blank.html">на 350 товаров</a></div>					
+					<div class="main-promo-buttom"><a href="blank.html">на 350 товаров</a></div>
+					<div class="main-promo-new none">new</div>					
 				</li>
 				<li class="main-promo-item promo-delivery">				    
 				    <h2>Доставка</h2>
-					<div class="main-promo-buttom"><a href="blank.html">бесплатно</a></div>				
+					<div class="main-promo-buttom"><a href="blank.html">бесплатно</a></div>
+					<div class="main-promo-new none">new</div>			
 				</li>
 			</ul>
 		</section>
@@ -105,21 +111,28 @@
 			</div>
 			<ul class="main-product-list">
 				<li class="main-product-item">
-					<div class="img-product">
-					    <img src="img/snippet-32961.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 9000">
+					<div class="container-product">
+						<div><img src="img/snippet-32961.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 9000"></div>
+						<div></div>
 				    </div>
-					<!-- <span class="new">NEW</span> -->
+					<div class="main-promo-new none">new</div>
 					<div class="main-product-item-link"><a href="blank.html">
 						<h3>Перфоратор BOSCH BFG 9000</h3>
 					</a></div>
 						<div class="old-price"><span>32500 Р.</span></div>
-						<div class="button-product"><a href="#">25500 Р.</a></div>					
+						<div class="button-product"><a href="#">25500 Р.</a></div>				
 				</li>
 				<li class="main-product-item">
-					<div class="img-product">
-						<img src="img/snippet-18927.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 3000">
+					<div class="container-product">
+						<div class="container-img-product none">
+							<img src="img/snippet-18927.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 3000">
+						</div>
+						<div class="container-button-product">
+							<button class="button-product-buy">Купить</button>
+							<button class="button-product-bookmarks">В закладки</button>
+						</div>
 					</div>
-					<!-- <span class="new">NEW</span> -->
+					<div class="main-promo-new">new</div>
 					<a class="main-product-item-link" href="blank.html">
 						<h3>Перфоратор BOSCH BFG 3000</h3>
 					</a>
@@ -127,10 +140,10 @@
 					<div class="button-product"><a href="#">15500 Р.</a></div>					
 				</li>
 				<li class="main-product-item">
-					<div class="img-product">
+					<div class="container-product">
 						<img src="img/snippet-945.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 6000">
 					</div>
-					<!-- <span class="new">NEW</span> -->
+					<div class="main-promo-new none">new</div>
 					<a class="main-product-item-link" href="blank.html">
 						<h3>Перфоратор BOSCH BFG 6000</h3>
 					</a>
@@ -138,10 +151,10 @@
 					<div class="button-product"><a href="#">25500 Р.</a></div>					
 				</li>
 				<li class="main-product-item">
-					<div class="img-product">
+					<div class="container-product">
 					    <img src="img/snippet-18927.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 2000">
 				    </div>
-					<!-- <span class="new">NEW</span> -->
+					<div class="main-promo-new">new</div>
 					<a class="main-product-item-link" href="blank.html">
 						<h3>Перфоратор BOSCH BFG 2000</h3>
 					</a>
@@ -154,7 +167,7 @@
 		<section class="main-producer container">
 			<div class="main-producer-header">
 				<h2>Популярные производители:</h2>
-				<div class="link-button"><a class="link-button" href="blank.html">все производители</a></div>
+				<div class="link-button"><a href="blank.html">все производители</a></div>
 			</div>
 			<ul class="main-producer-list">
 				<li class="main-producer-item">
@@ -203,40 +216,40 @@
 		<section class="main-services">
 			<div class="container">
 			<h2>Сервисы</h2>
-			<p>Хороший интернет-магазин отличается от плохого не только ценами!
-				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+			<div class="main-services-p"><p>Хороший интернет-магазин отличается от плохого не только ценами!
+				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p></div>
 			
 			<div class="main-services-list">
-				<div class="index-label">
-					<input type='radio' id='delivery' name='delivery' checked>
-					<label for='delivery'>Доставка</label>
+
+                <div class="main-services-button">
+					<button class="services-button button-delivery">Доставка</button>
+					<button class="services-button button-guarantee">Гарантия</button>
+					<button class="services-button button-credit">Кредит</button>
 				</div>
-				<div class="main-services-item">
+
+				<div class="main-services-item services-delivery">
 					<h3>Доставка</h3>
 					<p>Мы с удовольствием доставим ваш товар прямо
-						к вашему подъезду совершенно бесплатно!
-						Ведь мы неплохо заработаем,
+						к вашему подъезду совершенно бесплатно!<br>
+						Ведь мы неплохо заработаем,<br>
 						поднимая его на ваш этаж!</p>
-						<img src="img/car.png" width="619" height="283" alt="Картинка автомобиля">
 				</div>
 
-				<!-- <div class="index-label">
-				    <input type='radio' id='guarantee' name='guarantee'>
-					<label for='guarantee'>Гарантия</label>
-				</div>
-				<div class="main-services-item">
+				<div class="main-services-item services-guarantee none">
 					<h3>Гарантия</h3>
-					<p>Гггггггггггггггггггггггггггггг</p>
+					<p>oooooooooooooooooooooooooooooooooooooooooooo
+						ooooooooooooooooooooooooooooooooooooooo<br>
+						oooooooooooooooooooooooooo<br>
+						oooooooooooooooooooooo</p>
 				</div>
 
-				<div class="index-label">
-				    <input type='radio' id='credit' name='credit'>
-					<label for='credit'>Кредит</label>
-				</div>
-				<div class="main-services-item">
+				<div class="main-services-item  services-credit none">
 					<h3>Кредит</h3>
-					<p>Ккккккккккккккккккккккккккккккк</p>
-				</div> -->
+					<p>rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr
+						rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr<br>
+						rrrrrrrrrrrrrrrrrrrrrrrrrr,<br>
+						rrrrrrrrrrrrrrrrrrrrrr</p>
+				</div>
 			</div>
 			</div>
 		</section>
@@ -258,8 +271,8 @@
 			
 			<div class="main-info-map">
 			    <h2>КОНТАКТЫ</h2>
-				<p>Вы можете забрать товар сами,<br>
-                   заехав в наш офис:</p>
+				<div class="main-info-map-p"><p>Вы можете забрать товар сами,
+                   заехав в наш офис:</p></div>
 				<a href="blank.html"><img src="img/map.jpg" width="300" height="158" alt="Карта с нашим адресом"></a>
 				<div class="link-button main-info-map-link"><a href="blank.html">Заблудились? Напишите нам!</a></div>
 			</div>
