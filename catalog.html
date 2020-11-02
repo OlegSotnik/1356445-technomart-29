@@ -33,7 +33,14 @@
 		    </div>
 			<div class="header-section-centr-authorization catalog-authorization">
 				<div class="header-section-centr-name">
-					<a href="blank.html">Равшан Джамшутович</a>
+					<a class="header-section-centr-name-a" href="blank.html">
+						<svg class="header-section-centr-name-avatar" width="20" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.9 14.2a22 22 0 01-5.2-2.4c-.7-.5-.8-1.6-.5-2.4A5.5 5.5 0 0014 5C14 2.3 12.2 0 10 0S6 2.3 6 5c0 1.9.7 3.5 1.8 4.4.3.8.2 1.9-.5 2.4-1 .7-3 1.6-5.2 2.4C0 14.9 0 18 0 18h20s0-3.1-2.1-3.8z" fill="#C5C5C5"/></svg>
+						Равшан Джамшутович
+						<svg class="header-section-centr-name-exit" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5"/>
+							<path d="M2.10591 13.952V3.048C2.12391 2.672 2.27691 1.991 3.11591 1.991H8.14291V0H3.11591C0.937914 0 0.111914 1.81 0.0869141 3.027V13.973C0.111914 15.189 0.937914 17 3.11591 17H8.14291V15.01H3.11591C2.27691 15.01 2.12391 14.327 2.10591 13.952Z" fill="#C5C5C5"/>
+						</svg>
+					</a>
 				</div>
 			    <a class="header-section-centr-account" href="blank.html">Мои заказы  - Личный кабинет</a>
 			</div>
@@ -57,7 +64,7 @@
 	
 	    <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
-                <a href="index.html"></a>
+                <a href="index.html"><div class="breadcrumbs-icon-home"></div></a>
             </li>
             <li class="breadcrumbs-item">
                 <a href="catalog.html">КАТАЛОГ</a>
@@ -81,9 +88,67 @@
 			</div>
 
 			<div class="main-filter">
-			    <p>Цена:</p>
-			    <p>Производители:</p>
-			    <p>Питание:</p>
+			    
+				<form class="main-filter-form" method="get" action="https://echo.htmlacademy.ru">
+					<fieldset class="filter-section">
+					  <legend>Цена:</legend>
+					  <div class="range-filter">
+						<div class="range-controls">
+						  <div class="scale">
+							<div class="bar"></div>
+						  </div>
+						  <div class="toggle toggle-min" tabindex="0"></div>
+						  <div class="toggle toggle-max" tabindex="0"></div>
+						</div>
+						<div class="price-controls">
+						  <label class="min-price">
+							<input type="number" name="min-price" value="0">
+						  </label>
+						  <label class="max-price"> -  <input type="number" name="max-price" value="30000">
+						  </label>
+						</div>
+					  </div>
+					</fieldset>
+					<fieldset class="filter-section">
+					  <legend>Производители:</legend>
+					  <ul class="filter-checkbox-list">
+						<li class="filter-option filter-checkbox">
+						  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-bosch" checked>
+						  <label for="filter-bosch">BOSCH</label>
+						</li>
+						<li class="filter-option filter-checkbox">
+						  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="mr-natty" id="filter-interskol">
+						  <label for="filter-interskol">ИНТЕРСКОЛ</label>
+						</li>
+						<li class="filter-option filter-checkbox">
+						  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="suavecito" id="filter-makita" checked>
+						  <label for="filter-makita">MAKIta</label>
+						</li>
+						<li class="filter-option filter-checkbox">
+						  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="malin-goetz" id="filter-dewalt">
+						  <label for="filter-dewalt">Dewalt</label>
+						</li>
+						<li class="filter-option filter-checkbox">
+						  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="murrays" id="filter-hitachi">
+						  <label for="filter-hitachi">Hitachi</label>
+						</li>
+					  </ul>
+					</fieldset>
+					<fieldset class="filter-section">
+					  <legend>Питание:</legend>
+					  <ul class="filter-radio-list">
+						<li class="filter-option filter-radio">
+						  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-battery" checked>
+						  <label for="filter-battery">Аккумуляторные</label>
+						</li>
+						<li class="filter-option filter-radio">
+						  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="hair-care" id="filter-network">
+						  <label for="filter-network">Сетевые</label>
+						</li>
+					  </ul>
+					</fieldset>
+					<button type="submit" class="main-filter-form-button">Показать</button>
+				  </form>
 			</div>
 			
 		</section>
@@ -140,12 +205,18 @@
 				</li>
 				<li  class="main-product-item">
 					<div class="container-product">
-					    <img src="img/snippet-18927.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 3000">
-				    </div>
-					<!-- <span class="new">NEW</span> -->	
-					<div class="main-product-item-link"><a href="blank.html">
+						<div class="container-img-product none">
+							<img src="img/snippet-18927.jpg" width="184" height="164" alt="Изображение перфоратора BOSCH BFG 3000">
+						</div>
+						<div class="container-button-product">
+							<button class="button-product-buy">Купить</button>
+							<button class="button-product-bookmarks">В закладки</button>
+						</div>
+					</div>
+					<div class="main-promo-new">new</div>
+					<a class="main-product-item-link" href="blank.html">
 						<h3>Перфоратор BOSCH BFG 3000</h3>
-					</a></div>
+					</a>
 					<div class="old-price"><span>22500 Р.</span></div>
 					<div class="button-product"><a href="#">15500 Р.</a></div>					
 				</li>
@@ -278,7 +349,7 @@
 	
 	</footer>
 	
-	<section class="modal-order">
+	<section class="modal-order none">
         <p>Товар добавлен в корзину!</p>
         <div class="submit-order">
 			<div class="link-button"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
@@ -287,14 +358,14 @@
         <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
 
-    <section class="modal modal-authorization">
+    <section class="modal modal-authorization none">
         <h2>Войти в личный кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
         <!-- Здесь будет форма логина и пароля -->
         <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
 	
-	<section class="modal modal-account">
+	<section class="modal modal-account none">
         <h2>Создать личный кабинет</h2>
         <!-- Здесь будет форма логина и пароля -->
         <a href="#" class="close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
