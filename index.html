@@ -12,10 +12,19 @@
     <header class="header">
 	    <section class="header-section-logo">
 		    <div class="container-header-logo">
-            <div class="header-logo"><a href="index.html"><img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт"></a></div>
+            <div class="header-logo"><a class="header-logo-a" href="index.html"></a></div>
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+				<symbol id="search-icon">
+				    <title>search-icon</title>
+				    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"/>
+				</symbol>
+			</svg>
 			<form class="header-search">
-                <input class="header-search-input" type="search" name="q" placeholder="Поиск:">
-            </form>
+				<input class="header-search-input" type="search" name="q" placeholder="Поиск:">
+				<svg width="17" height="17" class="header-search-icon">
+					<use xlink:href="#search-icon"/>
+				</svg>
+			</form>
 			<a class="header-link-bookmarks" href="#">Закладки: 0</a>
 			<a class="header-link-basket" href="#">Корзина: 0</a>
 			<a class="header-link-order" href="#">Оформить заказ</a>
@@ -23,10 +32,10 @@
 		</section>
 		<section class="header-section-centr">
 			<div class="header-section-centr-title">
-		       <p>Интернет-магазин
-			   строительных материалов<br>
-			   и инструментов для ремонта</p>
-			</div>
+				<p>Интернет-магазин
+				строительных материалов<br>
+				и инструментов для ремонта</p>
+			 </div>
 			<div class="header-section-centr-contacts">
 			    <div class="header-section-centr-tel"><a class="header-tel" href="tel:+78125550555">+7 (812) 555-05-55</a></div>
 				<div class="header-section-centr-address"><p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p></div>
@@ -44,7 +53,7 @@
                 <li><a href="blank.html">Новости</a></li>
 				<li><a href="blank.html">Спецпредложения</a></li>
                 <li><a href="blank.html">Доставка</a></li>
-                <li><a href="blank.html">Контакты</a></li>
+				<li><a href="blank.html">Контакты</a></li>
             </ul>
 	   </nav>
 	</header>
@@ -271,7 +280,7 @@
 			    <h2>КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 				<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
                 <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-                   Техномарт работает со многими транспортными компаниями:</p>
+				   Техномарт работает со многими транспортными компаниями:</p>
 				<ul class="main-info-text-list">
 				    <li class="main-info-text-item"><div class="red-line"></div>Деловые линии</li>
 					<li class="main-info-text-item"><div class="red-line"></div>Автотрейдинг</li>
@@ -309,7 +318,7 @@
 			    <li class="footer-navigation-item"><a href="blank.html">Новости</a></li>
                 <li class="footer-navigation-item"><a href="catalog.html">Каталог</a></li>
                 <li class="footer-navigation-item"><a href="blank.html">Доставка</a></li>
-                <li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
+				<li class="footer-navigation-item"><a href="blank.html">Контакты</a></li>
                 <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Материалы</a></li>
 			    <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Техника</a></li>
                 <li class="footer-navigation-item"><a class="link-orange" href="blank.html">Инструмент</a></li>
@@ -341,7 +350,7 @@
 	
 	</footer>
 	
-	<section class="modal-order none">
+	<section class="modal modal-order">
         <p>Товар добавлен в корзину!</p>
         <div class="submit-order">
 			<div class="link-button"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
@@ -350,14 +359,12 @@
         <a href="#" class="modal-order-close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
     </section>
 	
-    <section class="modal-map none">
-	   
+    <section class="modal modal-map">
 		<a href="#" class="modal-map-close"><img src="img/icon-close.svg" width="21" height="21" alt="закрыть"></a>
-		<img src="img/map.png" width="1736" height="779" alt="Карта с нашим адресом">
-		
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123775!2d30.320894615830895!3d59.938796869048254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1604487277804!5m2!1sru!2sru" width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"  title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </section>
 	
-	<section class="modal-question none">
+	<section class="modal modal-question">
 
 		<form class="modal-question-form" action="https://echo.htmlacademy.ru" method="post">
 

@@ -12,10 +12,19 @@
     <header class="header">
 	    <section class="header-section-logo">
 			<div class="container-header-logo">
-            <div class="header-logo"><a href="index.html"><img src="img/logo-header.png" width="220" height="47" alt="Логотип компании Техномарт"></a></div>
+			<div class="header-logo"><a class="header-logo-a" href="index.html"></a></div>
+			<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+				<symbol id="search-icon">
+				    <title>search-icon</title>
+				    <path fill-rule="evenodd" clip-rule="evenodd" d="M13.46 12.04L17 15.6 15.59 17l-3.55-3.54a7.5 7.5 0 111.41-1.41zM7.5 2a5.5 5.5 0 10.01 11.01A5.5 5.5 0 007.5 2z"/>
+				</symbol>
+			</svg>
 			<form class="header-search">
-                <input class="header-search-input" type="search" name="q" placeholder="Поиск:">
-            </form>
+				<input class="header-search-input" type="search" name="q" placeholder="Поиск:">
+				<svg width="17" height="17" class="header-search-icon">
+					<use xlink:href="#search-icon"/>
+				</svg>
+			</form>
 			<a class="header-link-bookmarks" href="#">Закладки: 0</a>
 			<a class="header-link-basket header-link-basket-catalog" href="#">Корзина: 10</a>
 			<a class="header-link-order" href="#">Оформить заказ</a>
@@ -104,7 +113,7 @@
 						  <label class="min-price">
 							<input type="number" name="min-price" value="0">
 						  </label>
-						  <label class="max-price"> -  <input type="number" name="max-price" value="30000">
+						  <label class="max-price"> &mdash;  <input type="number" name="max-price" value="30000">
 						  </label>
 						</div>
 					  </div>
@@ -381,7 +390,7 @@
 	
 	</footer>
 	
-	<section class="modal-order none">
+	<section class="modal modal-order">
         <p>Товар добавлен в корзину!</p>
         <div class="submit-order">
 			<div class="link-button"><a href="#">ОФОРМИТЬ ЗАКАЗ</a></div>
