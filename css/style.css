@@ -683,10 +683,7 @@ body {
     line-height: 38px;
     background: var(--basic-red);
     text-transform: uppercase;
-  }
-
-  .link-button a {
-    color: var(--basic-white);
+    color: red;
   }
 
   .link-button:hover {
