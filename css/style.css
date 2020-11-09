@@ -96,7 +96,7 @@ body {
   .header {
     display: grid;
     min-height: 320px;
-    grid-template-rows: min-content 158px min-content;
+    grid-template-rows: min-content min-content min-content;
     background: var(--basic-extra-white-catalog-h1);
   }
 
@@ -277,10 +277,17 @@ body {
   }
 
   .header-section-centr-tel {
-    width: 264px;
-    height: 39px;
+    position: relative;
+    display: block;
+    width: 183px;
+    min-height: 25px;
     margin-top: 46px;
+    color: var(--basic-red);
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
     border: 3px solid var(--basic-white);
+    padding: 7px 7px 7px 74px;
   }
 
   .header-section-centr-address {
@@ -290,19 +297,10 @@ body {
     line-height: 24px;
     font-family: Cuprum, Arial, sans-serif;
     color: var(--basic-blue);
+    text-align: center;
   }
 
-  .header-tel {
-    display: block;
-    position: relative;
-    color: var(--basic-red);
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 30px;
-    padding: 6px 40px 8px 73px;
-  }
-
-  .header-tel::before {
+  .header-section-centr-tel::before {
     content: "";
     position: absolute;
     top: 11px;
@@ -322,16 +320,12 @@ body {
   }
 
   .header-section-centr-login-link {
-    display: block;
     position: relative;
-    width: 76px;
-    height: 33px;
-    margin-top: 46px;
-    margin-left: auto;
-    margin-right: 10px;
+    width: 73px;
+    min-height: 21px;
+    margin: 46px 10px auto auto;
     background: var(--basic-white);
-    padding-top: 12px;
-    padding-left: 45px;
+    padding: 12px 3px 12px 45px;
   }
 
   .header-section-centr-login-link svg {
@@ -349,15 +343,12 @@ body {
   }
 
   .header-section-centr-reg-link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     width: 150px;
-    height: 45px;
-    margin-top: 46px;
-    margin-right: 0;
+    min-height: 21px;
+    margin: 46px 0 auto 0;
     background: var(--basic-white);
+    text-align: center;
+    padding: 12px 0;
   }
 
   .header-section-centr-authorization a {
@@ -381,25 +372,30 @@ body {
   .header-navigation {
     width: 940px;
     margin: 0 auto;
-    box-shadow: inset 0px -5px 0px var(--blue-hover);
     background-color: var(--basic-blue);
   }
 
   .header-navigation-list {
-    display: grid;
-    grid-template-columns: repeat( 7, min-content);
-    justify-content: space-between;
-    max-width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 940px;
     list-style: none; 
     margin: 0;
     padding: 0;
   }
 
-  .header-navigation-list a {
-    display: block;
-    padding: 16px 31px 20px 30px;
+  .header-navigation-list li {
+    background-color: var(--basic-blue);
+    box-shadow: inset 0px -5px 0px var(--blue-hover);
+  }
+
+  .header-navigation-list a { 
+    display: block; 
+    padding: 16px 31px 20px 30px;  
     color: var(--basic-white);
     font-size: 18px;
+    line-height: 24px;
   }
 
   .header-navigation-list li:hover {
@@ -423,8 +419,8 @@ body {
 
   .main-promo-list {
     display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 123px 123px 123px;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, minmax(123px, 1fr));
     grid-template-areas:
     "promo-materials promo-instrument promo-technic"
     "main-promo-slider main-promo-slider promo-sale"
@@ -440,7 +436,7 @@ body {
     position: relative;
     flex-direction: column;
     width: 300px;
-    height: 123px;
+    min-height: 123px;
     color: var(--basic-white);
     overflow: hidden;
   }
@@ -523,7 +519,7 @@ body {
   }
 
   .main-promo-item h2 {
-    margin: 20px 0 0 23px;
+    margin: 20px 50px 0 23px;
     font-size: 24px;
     line-height: 30px;
     font-weight: 700px;
@@ -668,17 +664,18 @@ body {
   .main-promo-slider-controls2:active,
   .main-promo-slider-controls2:focus {
     outline: none;
-    }
+  }
 
   .link-button {
-    Width: 192px;
-    height: 38px;
+    Width: 172px;
+    min-height: 18px;
     margin-right: 14px;
     text-align: center;
-    line-height: 38px;
+    line-height: 18px;
     background: var(--basic-red);
     text-transform: uppercase;
     color: var(--basic-white);
+    padding: 10px;
   }
 
   .link-button:hover {
@@ -699,7 +696,7 @@ body {
     align-items: center;
     justify-content: space-between;
     Width: 940px;
-    height: 89px;
+    min-height: 89px;
     margin-bottom: 20px;
     background: var(--basic-white-header);
   }
@@ -707,6 +704,7 @@ body {
   .main-product h2,
   .main-producer-header h2 {
     font-size: 30px;
+    line-height: 30px;
     margin-left: 28px;
     color: var(--basic-blue);
     text-transform: uppercase;
@@ -763,7 +761,7 @@ body {
   .button-product-buy {
     position: relative;
     width: 135px;
-    height: 38px;
+    min-height: 38px;
     margin-top: 38px;
     background: var(--basic-green);
     box-shadow: inset 0px -3px 0px var(--shadow-buy);
@@ -793,7 +791,7 @@ body {
   .button-product-buy::before {
     content: "";
     position: absolute;
-    top: 11px;
+    top: 33%;
     left: 32px;  
     width: 15px;
     height: 15px;
@@ -1125,12 +1123,12 @@ body {
 
   .main-info-text-link {
     display: block;
-    width: 220px;
+    width: 200px;
   }
 
   .main-info-map-link {
     display: block;
-    width: 300px;
+    width: 280px;
   }
 
   .footer {
