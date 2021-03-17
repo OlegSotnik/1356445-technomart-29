@@ -1007,8 +1007,7 @@ body {
     background-color: var(--basic-dark-blue);
   }
 
-  .services-button:active,
-  .services-button:focus {
+  .services-button-checked {
     background: var(--basic-white);
     box-shadow: 0px 1px 0px var(--basic-white);
     color: var(--basic-blue);
@@ -1055,7 +1054,7 @@ body {
     padding: 0;
   }
 
-  .main-services-item::before {
+  .img-delivery::before {
     content: "";
     position: absolute;
     top: 72px;
@@ -2130,7 +2129,6 @@ body {
     transform: translateX(10px);
   }
 }
-  
     
 
 
